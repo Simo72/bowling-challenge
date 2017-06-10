@@ -3,6 +3,9 @@ function BowlingGame() {
   this.score = 0
 }
 
-BowlingGame.prototype.bowl = function () {
+BowlingGame.prototype.bowl_one = function () {
   return (this.score =+ 7)
 };
+
+
+// for(i = 0; i < 6; i++) { thermostat.up(); };
