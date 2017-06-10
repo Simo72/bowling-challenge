@@ -14,7 +14,7 @@ describe('BowlingGame', function(){
 
   it("Bowls 2 balls", function () {
     bowlingGame.bowl_two();
-    expect(bowlingGame.score).toEqual(9);
+    expect(bowlingGame.score).toEqual(2);
   });
 
 });
