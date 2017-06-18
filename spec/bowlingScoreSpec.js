@@ -7,10 +7,9 @@ describe('BowlingGame', function(){
     bowlingGame = new BowlingGame();
   });
 
-  it("bowls a ball towards the pins", function() {
+  it("returns strike is 10 pins knocked down", function() {
     bowlingGame.bowl();
-    expect(bowlingGame.score).toEqual(7);
+    expect(bowlingGame.play()).toEqual("Mmmm nice bowl!");
   });
-
 
 });

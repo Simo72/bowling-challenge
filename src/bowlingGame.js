@@ -1,22 +1,28 @@
 function BowlingGame() {
+
   this.score = 0;
-  this.pins = 10;
+  this.currentBowl = 0;
+  this.bowls = [];
+  var scorecard = {};
 
-// BowlingGame.prototype.getCurrentScore = function() {
-//   return this.score;
-// };
+  BowlingGame.prototype.bowl = function (pins) {
+    var scoreOne =  Math.floor(Math.random() * 10) + 1;
+      this.bowls.push(scoreOne);
+      this.score =+ scoreOne
+      this.currentBowl++
+    console.log(this.bowls);
+    console.log(this.currentBowl)
+    console.log(this.score)
+  };
 
-BowlingGame.prototype.bowl_one = function () {
-  var scoreOne =  Math.floor(Math.random() * 10) + 1;
-  (this.score += scoreOne);
-};
 
-BowlingGame.prototype.bowl_two = function () {
-  (this.score += 2)
-};
 
-// BowlingGame.prototype.frame = function () {
-//
-// }
-// for(i = 0; i < 6; i++) { thermostat.up(); };
+
+BowlingGame.prototype.play = function() {
+  if (this.score == 10)
+    return "Mmmm nice bowl!"
+  else {
+    return this.score
+  }
 }
+};
