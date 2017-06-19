@@ -13,6 +13,13 @@ function BowlingGame() {
     console.log(this.scoreOne)
   };
 
+  BowlingGame.prototype.bowlSecond = function (pins) {
+    var score =  0 //Math.floor(Math.random() * 10) + 1;
+      this.scoreTwo =+ score
+
+    console.log(this.scoreTwo)
+  };
+
 
 
 
