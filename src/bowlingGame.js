@@ -1,28 +1,20 @@
 function BowlingGame() {
 
-  this.score = 0;
+  this.scoreOne = 0;
+  this.scoreTwo = 0;
   this.currentBowl = 0;
   this.bowls = [];
   var scorecard = {};
 
-  BowlingGame.prototype.bowl = function (pins) {
-    var scoreOne =  Math.floor(Math.random() * 10) + 1;
-      this.bowls.push(scoreOne);
-      this.score =+ scoreOne
-      this.currentBowl++
-    console.log(this.bowls);
-    console.log(this.currentBowl)
-    console.log(this.score)
+  BowlingGame.prototype.bowlFirst = function (pins) {
+    var score =  0 //Math.floor(Math.random() * 10) + 1;
+      this.scoreOne =+ score
+
+    console.log(this.scoreOne)
   };
 
 
 
 
-BowlingGame.prototype.play = function() {
-  if (this.score == 10)
-    return "Mmmm nice bowl!"
-  else {
-    return this.score
-  }
-}
+
 };

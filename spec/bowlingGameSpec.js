@@ -8,8 +8,8 @@ describe('BowlingGame', function(){
   });
 
   it("bowls a ball towards the pins", function() {
-    bowlingGame.bowl();
-    expect(bowlingGame.score).toEqual(7);
+    bowlingGame.bowlFirst();
+    expect(bowlingGame.scoreOne).toEqual(0);
   });
 
 
